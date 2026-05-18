@@ -1,0 +1,187 @@
+% Tales Mousinho - Full-Stack Developer CV
+
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[a4paper,margin=1.35cm,top=1.15cm,bottom=1.35cm]{geometry}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{needspace}
+\usepackage{ragged2e}
+
+\definecolor{accent}{HTML}{0F3D5E}
+\definecolor{textgray}{HTML}{333333}
+\definecolor{muted}{HTML}{666666}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  pdfauthor={Tales Mousinho},
+  pdftitle={Tales Mousinho - Full-Stack Developer CV},
+  pdfsubject={Full-stack developer CV},
+  pdfkeywords={Java, Spring Boot, TypeScript, Angular, React, Kafka, Camunda, SAP OData, AI, LLM, Full-Stack Developer}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize\color{muted}Tales Mousinho \textbullet{} Curriculum Vitae \textbullet{} Page \thepage{} of \pageref*{LastPage}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\renewcommand{\familydefault}{\sfdefault}
+\AtBeginDocument{\color{textgray}}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0em}{}[\vspace{-0.55em}\rule{\linewidth}{0.45pt}\vspace{-0.45em}]
+\titlespacing*{\section}{0pt}{0.85em}{0.45em}
+
+\setlist[itemize]{leftmargin=1.25em, itemsep=0.12em, topsep=0.2em, parsep=0em, partopsep=0em}
+
+\newcommand{\contactsep}{\;\textbullet\;}
+\newcommand{\skillrow}[2]{\textbf{#1} & #2 \\[0.08em]}
+\newcommand{\skillline}[2]{\textbf{#1:} #2\par}
+
+\newcommand{\cventry}[5]{%
+  \needspace{5\baselineskip}%
+  \textbf{#1} \hfill {\small\color{muted}#2}\\[-0.05em]
+  {\emph{#3}} \hfill {\small\color{muted}#4}\vspace{-0.25em}
+  \begin{itemize}
+    #5
+  \end{itemize}\vspace{0.15em}
+}
+
+\newcommand{\compactentry}[4]{%
+  \needspace{3\baselineskip}%
+  \textbf{#1} \hfill {\small\color{muted}#2}\\[-0.05em]
+  {\emph{#3}}\vspace{-0.25em}
+  \begin{itemize}
+    #4
+  \end{itemize}\vspace{0.05em}
+}
+
+\newcommand{\eduentry}[5]{%
+  \textbf{#1} \hfill {\small\color{muted}#2}\\[-0.05em]
+  {\emph{#3}} \hfill {\small\color{muted}#4}\\[-0.05em]
+  {\small #5}\vspace{0.3em}
+}
+
+\begin{document}
+
+{\centering
+  {\LARGE\bfseries Tales Mousinho}\\[0.25em]
+  {\large\color{accent}Full-Stack Developer \textbullet{} Java/Spring Boot \textbullet{} TypeScript \textbullet{} Agentic Development}\\[0.3em]
+  {\small Lisbon, Portugal\contactsep \mbox{+351~926~793~236}\contactsep
+  \href{mailto:tales@encode.pt}{tales@encode.pt}}\\[0.15em]
+  {\small \href{https://github.com/talesmousinho}{github.com/talesmousinho}\contactsep
+  \href{https://www.linkedin.com/in/talesmousinho}{linkedin.com/in/talesmousinho}}
+  \par
+}
+
+\section{Professional Profile}
+Full-stack developer with 8+ years of experience building and maintaining web applications for teams in the public sector, banking, higher education, and SaaS/R\&D. Works mainly with Java/Spring, TypeScript, Angular/React, relational databases, and integrations between business systems. Recent work includes secure REST APIs, Camunda workflow automation, Kafka-based services, SAP S/4HANA integrations, internal dashboards, testing, CI/CD support, and production troubleshooting. Hands-on R\&D experience with GPT models, LLaMA, LangChain, and vector databases, mostly through practical prototypes and evaluation work. Focused on performance, user experience, and security.
+\section{Technical Skills}
+{\small
+\skillline{Languages}{Java, TypeScript, JavaScript, SQL, Shell Script}
+\skillline{Back End}{Spring Boot, Java/Jersey, REST APIs, Kafka, Protobuf, Node.js, Next.js, Laravel, Ruby on Rails}
+\skillline{Front End}{Angular, React, HTML5, CSS/SASS, Tailwind CSS, Material Design, mobile interfaces, Adobe XD, Photoshop}
+\skillline{Data}{Oracle DB, PostgreSQL, SQL Server, MySQL, NoSQL, Pinecone/vector databases}
+\skillline{Cloud \& DevOps}{Docker, Kubernetes, Jenkins, JBoss, Google Cloud Platform, IBM Cloud, Red Hat OpenShift, Git}
+\skillline{Quality \& Tools}{JUnit, Mockito, Selenium, Protractor, SonarQube, Fortify, Firebase Crashlytics, Google Analytics, Jira, JFrog Artifactory}
+\skillline{Workflow \& AI}{Camunda, JasperReports, OpenAI GPT models, LLaMA, LangChain, prompt benchmarking, LangChain Auto-Evaluator}
+\skillline{Spoken Languages}{Portuguese native; English C2}
+}
+
+\section{Professional Experience}
+
+\cventry{European Commission \normalfont{(contract)}}{Remote, Europe}{Full-Stack Developer}{Mar. 2025 -- Apr. 2026}{
+  \item Contribute to business and technical analysis for external system integrations and software implementation within a SAFe delivery context.
+  \item Maintain and evolve Camunda-based workflow automation supporting business-process execution.
+  \item Implement SAP S/4HANA OData integrations and Java/Spring microservices using Kafka/Protobuf, secured REST APIs, and Oracle DB.
+}
+
+\cventry{KLx - Crédit Agricole Group \normalfont{(contract)}}{Lisbon, Portugal}{Senior Full-Stack Developer}{Oct. 2024 -- Mar. 2025}{
+  \item Maintained enterprise banking applications using Angular, Spring Boot, and PostgreSQL.
+  \item Assisted development of Spring Batch pipelines for enterprise data and process automation.
+  \item Collaborated with cross-functional Agile teams on delivery, issue resolution, and maintainability improvements.
+}
+
+\cventry{Fujitsu \normalfont{(contract)}}{Lisbon, Portugal}{Full-Stack Developer}{Jan. 2024 -- Sep. 2024}{
+  \item Maintained enterprise projects in a Spring Boot microservice environment using Apache Kafka, Angular, and PostgreSQL.
+  \item Developed internal production-monitoring applications with React, Node.js clusters, and NoSQL databases, including dashboards for operational metrics.
+  \item Participated in sprint planning, daily coordination, retrospectives, and cross-functional troubleshooting.
+}
+
+\cventry{SMARKIO \normalfont{(full-time)}}{Remote, Portugal}{Software Engineer}{Mar. 2023 -- Jul. 2023}{
+  \item Collaborated with the R\&D team on generative AI and large language model use cases.
+  \item Built multiple proof-of-concept web applications using React, Next.js, and Tailwind CSS.
+  \item Integrated OpenAI GPT models, LLaMA, LangChain, and vector databases; set up prompt-performance benchmarks with LangChain Auto-Evaluator.
+}
+
+\cventry{BNP Paribas \normalfont{(contract)}}{Lisbon, Portugal}{Full-Stack Developer}{Mar. 2022 -- Mar. 2023}{
+  \item Developed and maintained complex web applications using Spring Boot, REST APIs, ExtJS, Angular, and Sybase DB.
+  \item Coordinated requirements with distributed SAFe teams, maintained Jira backlogs, and supported production deployments.
+  \item Built and maintained JasperReports; managed packages in JFrog Artifactory for version control and dependency access.
+  \item Troubleshot issues across a large microservice codebase; wrote JUnit/Mockito unit and integration tests; used SonarQube and Fortify for quality and security analysis.
+}
+
+\cventry{Senac \normalfont{(full-time)}}{São Paulo, Brazil}{Full-Stack Developer}{Mar. 2018 -- Feb. 2022}{
+  \item Delivered internal web applications with Angular/Material Design front ends and Java/Jersey REST APIs connected to Oracle DB.
+  \item Designed relational database models and wrote SQL queries to support business processes and improve data retrieval.
+  \item Assisted Jenkins CI/CD setup, wrote Angular E2E tests with Protractor/Selenium, and participated in Agile ceremonies.
+  \item Mentored interns in Angular, RxJS, Java, and project best practices.
+}
+
+\section{Earlier Experience}
+
+\compactentry{YetGo \normalfont{(part-time)}}{Belém, Brazil \textbullet{} Apr. 2017 -- Feb. 2018}{Software Developer}{
+  \item Maintained a PHP/Laravel/MySQL customer dashboard, coded back-end integration tests, built iOS interfaces with AutoLayout, Objective-C, and Swift, and integrated Firebase Crashlytics for issue monitoring.
+}
+
+\compactentry{Jambu Tecnologia \normalfont{(part-time)}}{Belém, Brazil \textbullet{} Mar. 2017 -- Feb. 2018}{Web Developer}{
+  \item Developed a Ruby on Rails CMS for a government agency and an SEO-optimized product catalog for small businesses using Bootstrap and PostgreSQL.
+}
+
+\compactentry{Portal da Floresta Empreendimentos \normalfont{(contract)}}{Belém, Brazil \textbullet{} Dec. 2014 -- Jan. 2017}{Lead Software Developer}{
+  \item Led Laravel/MySQL administrative systems for real-estate financing, including sales, payments, default control, reporting, contract issuance, and finance/accounting data workflows.
+}
+
+\compactentry{Banco do Brasil \normalfont{(intern)}}{Belém, Brazil \textbullet{} May 2013 -- Feb. 2014}{Data Analyst Intern}{
+  \item Built Access/Excel VBA scripts to collect and automate internal MS-DOS application workflows; delivered Excel mini-lectures and supported technology training.
+}
+
+\compactentry{MedicalDTV \normalfont{(freelancer)}}{Panama City, United States \textbullet{} Sep. 2012 -- Mar. 2013}{Lead Software Developer}{
+  \item Rebuilt an e-commerce website for recorded medical congress presentations using PHP/MySQL and Zend Framework; integrated PayPal, ffmpeg encoding scripts, hosting, domains, and email administration.
+}
+
+\compactentry{GERCOM - Research Group on Computer Networks and Multimedia Communication, Federal University of Pará}{Belém, Brazil \textbullet{} Aug. 2010 -- Jul. 2012}{Research Collaborator}{
+  \item Contributed to Sensor4Cities, a wireless sensor network data-collection tool for environmental conditions, and collaborated on a technical paper about the project.
+}
+
+\compactentry{Jambu Tecnologia / CTIC - Federal University of Pará \normalfont{(internships)}}{Belém, Brazil \textbullet{} Nov. 2010 -- Nov. 2011}{Web Developer Intern}{
+  \item Developed and maintained PHP/HTML/Joomla/WordPress websites, published updates with FTP/PHPMyAdmin, and supported open-source CRM/ERP applications.
+}
+
+\section{Education}
+\eduentry{Senac University Center}{São Paulo, Brazil}{Computer Science coursework; 60 credits completed}{2018 -- 2020}{Selected coursework: object-oriented programming, databases, usability and human-computer interfaces, scientific computing, data extraction and visualization, communication and technical writing, digital law.}
+
+\eduentry{UFPA - Federal University of Pará}{Belém, Brazil}{Computer Engineering coursework; 76 credits completed}{2010 -- 2014}{Selected coursework: programming, data structures, computer architecture, computer networks, operating systems, software engineering, probability and statistics, theory of computation, microprocessors and microcontrollers.}
+
+\section{Certifications and Additional Activities}
+\begin{itemize}
+  \item ESOL Certification, Tom P. Haney Technical Center, United States, 2013.
+  \item ENEEAmb 2012, National Meeting of Environmental Engineering Students - developed WordPress site, registration/payment workflow, course/technical-visit selection, and certificate-generation script.
+  \item Telecentros.BR - remote student instructor for a government-backed digital inclusion program, supporting technology access and reporting program metrics.
+\end{itemize}
+
+\end{document}
