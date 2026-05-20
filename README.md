@@ -1,4 +1,4 @@
-# Tales Mousinho — CV
+# Tales Mousinho - CV / Resume
 
 [![Build CV PDF](https://github.com/talesmousinho/resume/actions/workflows/build-cv.yml/badge.svg)](https://github.com/talesmousinho/resume/actions/workflows/build-cv.yml)
 
