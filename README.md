@@ -1,6 +1,6 @@
 # Tales Mousinho - CV / Resume
 
-[![Build PDF](https://github.com/talesmousinho/resume/actions/workflows/build-cv.yml/badge.svg)](https://github.com/talesmousinho/resume/actions/workflows/build-cv.yml)
+[![Build CV PDF](https://github.com/talesmousinho/resume/actions/workflows/build-cv.yml/badge.svg)](https://github.com/talesmousinho/resume/actions/workflows/build-cv.yml)
 
 Source for my full-stack developer CV, written in LaTeX and compiled to PDF via GitHub Actions.
 
