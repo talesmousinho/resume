@@ -1,6 +1,6 @@
 # Tales Mousinho - CV / Resume
 
-[![Build CV PDF](https://github.com/talesmousinho/resume/actions/workflows/build-cv.yml/badge.svg)](https://github.com/talesmousinho/resume/actions/workflows/build-cv.yml)
+[![Build PDF](https://github.com/talesmousinho/resume/actions/workflows/build-cv.yml/badge.svg)](https://github.com/talesmousinho/resume/actions/workflows/build-cv.yml)
 
 Source for my full-stack developer CV, written in LaTeX and compiled to PDF via GitHub Actions.
 
@@ -8,7 +8,7 @@ Source for my full-stack developer CV, written in LaTeX and compiled to PDF via 
 
 | | |
 |---|---|
-| ![Page 1](preview/page-01.png) | ![Page 2](preview/page-02.png) |
+| ![Page 1](preview/page-1.png) | ![Page 2](preview/page-2.png) |
 
 ## Files
 
